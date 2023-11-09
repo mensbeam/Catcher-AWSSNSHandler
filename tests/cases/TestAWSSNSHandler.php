@@ -21,7 +21,7 @@ use Aws\Sns\SnsClient,
 /** @covers \MensBeam\Catcher\AWSSNSHandler */
 class TestAWSSNSHandler extends \PHPUnit\Framework\TestCase {
     protected ?SnsClient $client = null;
-    protected ?Handler $handler = null;
+    protected ?AWSSNSHandler $handler = null;
 
 
     public function setUp(): void {

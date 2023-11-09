@@ -8,7 +8,7 @@
 
 # AWSSNSHandler #
 
-_AWSSNSHandler_ is a Throwable handler for use in [_Catcher_][a], a Throwable and error handling library for PHP. It sends throwables and errors to Amazon SNS topics. Right now _AWSSNSHandler_ only supports sending to email topics. SMS messages aren't supported at this time.
+_AWSSNSHandler_ is a Throwable handler for use in [_Catcher_][a], a Throwable and error handling library for PHP. It sends throwables and errors to Amazon SNS topics. Right now _AWSSNSHandler_ only supports sending to standard topics.
 
 
 ## Requirements ##
@@ -38,8 +38,8 @@ $client = new SnsClient([
     'version' => 'latest',
     'region' => 'us-west-2',
     'credentials' => [
-        'key' => 'AKIAFIMBZAFZZQL42RMH',
-        'secret' => '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'
+        'key' => '<AWS KEY>',
+        'secret' => '<AWS SECRET>'
     ]
 ]);
 $catcher = new Catcher(new AWSSNSHandler($client, 'arn:aws:sns:us-west-2:701867229025:ook_eek'));
