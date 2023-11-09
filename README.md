@@ -14,7 +14,7 @@ _AWSSNSHandler_ is a Throwable handler for use in [_Catcher_][a], a Throwable an
 ## Requirements ##
 
 * PHP >= 8.1
-* [mensbeam/catcher][a] ^2.1.0
+* [mensbeam/catcher][a] ^2.1.2
 * [aws/aws-sdk-php][b] ^3.283
 
 
